@@ -2,9 +2,9 @@
 
 ## Product scope
 
-A public-facing sim racing team website for **LSSD Racing**. The site presents a credible, independent endurance sim-racing program rather than a generic gaming landing page. It includes:
+A public-facing sim racing team website for **LSSD Racing**. The site presents a credible, independent multi-discipline sim-racing program rather than a generic gaming landing page. It includes:
 
-- A cinematic home page with hero, team manifesto, the LSSD 01 machine, driver lineup, race calendar, results, partners, and join CTA.
+- A cinematic home page with hero, team manifesto, GT Endurance / Stock Car / Rally program rail, the LSSD 01 machine, driver lineup, race calendar, results, partners, and join CTA.
 - A driver profile route (`/drivers/:slug`) for each of the two active drivers.
 - A recruitment route (`/join`) with open roles, the selection process, an FAQ, and a working email application flow.
 - Responsive navigation, a live race countdown, race/results tabs, scroll reveals, and reduced-motion support.
@@ -126,7 +126,7 @@ The user supplied the official **LSSD Racing** logo: a bold red team wordmark ac
 ## Content model
 
 - Two fictional drivers: Elias Voss (#17, DE) and Mina Sato (#24, JP).
-- 2026 program in the fictional Global Endurance Sim Series (GESS) and Virtual GT World Challenge (VGT).
+- Three racing programs: GT Endurance, Stock Car, and Rally. The current fictional 2026 calendar uses the Global Endurance Sim Series (GESS) and Virtual GT World Challenge (VGT) for event labels.
 - Upcoming race: 6H Spa Virtual at Circuit de Spa-Francorchamps, 12 December 2026.
 - Season results include Sebring, Monza, Nürburgring, and Silverstone.
 - Partners: fictional wordmarks only, clearly presented as team partners.

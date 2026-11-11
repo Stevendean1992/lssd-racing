@@ -4,6 +4,7 @@
 
 - [x] Present a public-facing sim racing team website for LSSD Racing with a coherent, recognizable team identity.
 - [x] Home page communicates the team’s endurance sim-racing positioning, fictional 2026 program, machine, partners, and recruitment CTA.
+- [x] Site visibly presents all three competition disciplines: GT Endurance, Stock Car, and Rally, with descriptions in the homepage program rail and matching recruitment/SEO copy.
 - [x] Hero uses a custom cinematic racing image with clear headline, status, and primary/secondary actions.
 - [x] Team manifesto, LSSD 01 machine specifications, driver lineup, race calendar, season results, and partner content are complete and internally consistent.
 - [x] A live countdown to the next scheduled race updates without layout shift.

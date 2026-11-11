@@ -72,6 +72,24 @@ export const TEAM_STATS = [
   { value: "02", label: "Factory drivers" },
 ];
 
+export const RACING_DISCIPLINES = [
+  {
+    number: "01",
+    name: "GT Endurance",
+    detail: "Long-form GT racing built around pace, tyre life and the full distance.",
+  },
+  {
+    number: "02",
+    name: "Stock Car",
+    detail: "Close-quarters racing where traffic management and repeatable launches matter.",
+  },
+  {
+    number: "03",
+    name: "Rally",
+    detail: "Stage-by-stage precision across changing surfaces, weather and commitment points.",
+  },
+];
+
 export const DRIVERS: Driver[] = [
   {
     slug: "elias-voss",
@@ -83,7 +101,7 @@ export const DRIVERS: Driver[] = [
     accent: "#D6A338",
     born: "1997 · Cologne",
     since: "2019",
-    disciplines: ["GESS", "Virtual GT World"],
+    disciplines: ["GT Endurance", "Rally"],
     quote: "The lap starts long before the lights go out.",
     bio: [
       "Elias joined LSSD as one of the team’s founding drivers after a decade in open-wheel sim racing. His strength is not one spectacular lap; it is the ability to hold a reference for six hours while the track, the traffic and the weather all move underneath him.",
@@ -102,7 +120,7 @@ export const DRIVERS: Driver[] = [
     accent: "#C91525",
     born: "2001 · Yokohama",
     since: "2022",
-    disciplines: ["Virtual GT World", "GESS"],
+    disciplines: ["Stock Car", "GT Endurance"],
     quote: "Precision is just speed with nowhere to hide.",
     bio: [
       "Mina arrived at LSSD through the team’s development programme and became a full race driver within a season. Her qualifying pace is the benchmark in the garage: clean, repeatable and fearless on the first flying lap.",
@@ -300,7 +318,7 @@ export const OPEN_ROLES = [
   {
     title: "Development driver",
     type: "Driver roster",
-    detail: "Reserve and test mileage across GT3 and endurance programmes.",
+    detail: "Reserve and test mileage across GT Endurance, Stock Car and Rally programmes.",
   },
   {
     title: "Race engineer",

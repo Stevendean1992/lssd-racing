@@ -10,6 +10,7 @@ import {
   NEXT_RACE,
   OPEN_ROLES,
   RACE_CALENDAR,
+  RACING_DISCIPLINES,
   SEASON_RESULTS,
   SPONSORS,
   TEAM_PRINCIPLES,
@@ -61,7 +62,7 @@ function downloadNextRace() {
 export default function Home() {
   usePageMeta(
     "LSSD Racing | Engineered for the Limit",
-    "LSSD Racing is an independent sim racing team built for endurance. Meet the drivers, explore the LSSD 01, follow the 2026 calendar and apply to join the grid.",
+    "LSSD Racing competes in GT Endurance, Stock Car and Rally racing. Meet the drivers, explore the LSSD 01, follow the 2026 calendar and apply to join the grid.",
   );
 
   const [calendarView, setCalendarView] = useState<CalendarView>("upcoming");
@@ -77,7 +78,7 @@ export default function Home() {
 
         <div className="container hero__inner">
           <div className="hero__meta">
-            <span className="hero__kicker">Independent endurance sim racing</span>
+            <span className="hero__kicker">GT Endurance / Stock Car / Rally</span>
             <span className="hero__status">
               <span className="live-dot" aria-hidden="true" />
               Operational / Rotterdam
@@ -185,9 +186,9 @@ export default function Home() {
               </p>
               <p>
                 LSSD was built by a race engineer and two drivers who wanted one thing:
-                a team where preparation mattered more than noise. Today we run endurance
-                programmes across GT3 and virtual GT, with every decision traced back to
-                the same standard — make the fast lap repeatable.
+                  a team where preparation mattered more than noise. Today we compete across
+                  GT Endurance, Stock Car and Rally, with every decision traced back to the
+                  same standard — make the fast lap repeatable.
               </p>
               <Link className="text-link" href="/join">
                 Read the racing code
@@ -248,6 +249,23 @@ export default function Home() {
                 </p>
               </Reveal>
 
+              <div className="discipline-list" aria-label="LSSD Racing disciplines">
+                <div className="discipline-list__header">
+                  <span>Race programmes</span>
+                  <span>Three disciplines / one standard</span>
+                </div>
+                {RACING_DISCIPLINES.map(discipline => (
+                  <div className="discipline-row" key={discipline.name}>
+                    <span className="discipline-row__number">{discipline.number}</span>
+                    <div>
+                      <h3>{discipline.name}</h3>
+                      <p>{discipline.detail}</p>
+                    </div>
+                    <span className="discipline-row__slash" aria-hidden="true">//</span>
+                  </div>
+                ))}
+              </div>
+
               <div className="principle-list">
                 {TEAM_PRINCIPLES.map((principle, index) => (
                   <Reveal className="principle-row" key={principle.number} delay={index * 0.06}>
@@ -275,8 +293,8 @@ export default function Home() {
           <SectionHeading
             index="03"
             label="The machine"
-            title="LSSD 01 / GT3 Evo"
-            description="A virtual homologation, developed for one job: holding a reference when the fuel load, tyre life and track state stop agreeing with each other."
+              title="LSSD 01 / GT Endurance"
+              description="Our GT endurance homologation is developed for one job: holding a reference when the fuel load, tyre life and track state stop agreeing with each other."
             tone="lime"
           />
 

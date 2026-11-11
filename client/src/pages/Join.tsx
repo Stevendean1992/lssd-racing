@@ -46,7 +46,7 @@ const PROCESS_STEPS = [
 export default function Join() {
   usePageMeta(
     "Join the Grid — Sim Racing Careers",
-    "Apply to join LSSD Racing's 2027 programme. Open disciplines for development drivers, race engineers and broadcast operators.",
+    "Apply to join LSSD Racing's 2027 programme across GT Endurance, Stock Car and Rally. Open roles for drivers, race engineers and broadcast operators.",
   );
 
   const [form, setForm] = useState<FormState>(INITIAL_FORM);
@@ -129,7 +129,8 @@ export default function Join() {
             <div className="join-hero__copy">
               <p>
                 We are not looking for the loudest profile. We are looking for the person
-                who can show their work, take a debrief and make the next stint cleaner.
+                who can show their work, take a debrief and make the next stint, stage or
+                restart cleaner.
               </p>
               <a className="button button--lime" href="#open-roles">
                 See open roles
@@ -154,11 +155,11 @@ export default function Join() {
 
       <section className="join-open section--paper" id="open-roles" aria-labelledby="open-roles-title">
         <div className="container">
-          <SectionHeading
-            index="01"
-            label="Open positions"
-            title="Make the team faster."
-            description="Three disciplines, one standard. If your role is not listed, make the case anyway. A good application is allowed to create its own seat."
+            <SectionHeading
+              index="01"
+              label="Open positions"
+              title="Make the team faster."
+              description="GT Endurance, Stock Car and Rally. If your role is not listed, make the case anyway. A good application is allowed to create its own seat."
             tone="light"
           />
 

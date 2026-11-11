@@ -1234,6 +1234,57 @@ div[id="application-form"] {
   margin-top: 16px;
 }
 
+.discipline-list {
+  margin-top: 38px;
+  border-top: 1px solid var(--line);
+}
+
+.discipline-list__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0 9px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 7px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.discipline-row {
+  display: grid;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 15px 0;
+  grid-template-columns: 38px 1fr auto;
+  gap: 12px;
+}
+
+.discipline-row__number,
+.discipline-row__slash {
+  color: var(--brand-red);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
+.discipline-row h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.discipline-row p {
+  max-width: 400px;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.55;
+}
+
 .principle-list {
   margin-top: 42px;
   border-top: 1px solid var(--line);
