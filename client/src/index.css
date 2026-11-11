@@ -1538,7 +1538,7 @@ div[id="application-form"] {
   align-items: start;
   margin-top: clamp(48px, 6vw, 76px);
   padding-bottom: 34px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 

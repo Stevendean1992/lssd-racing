@@ -10,7 +10,7 @@
 
 ## Driver profiles
 
-- [x] Each of the four featured drivers links to `/drivers/:slug` and has a complete profile with role, nationality, number, stats, biography, and season results.
+- [x] Each of the two active drivers links to `/drivers/:slug` and has a complete profile with role, nationality, number, stats, biography, and season results.
 - [x] Invalid driver slugs use the supplied NotFound experience.
 
 ## Recruitment

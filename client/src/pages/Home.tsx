@@ -104,7 +104,7 @@ export default function Home() {
 
             <div className="hero__copy">
               <p>
-                We don’t chase clean laps. We engineer them. Four drivers, one machine,
+                We don’t chase clean laps. We engineer them. Two drivers, one machine,
                 and a race programme built for the hour when everyone else starts guessing.
               </p>
               <div className="hero__actions">
@@ -358,7 +358,7 @@ export default function Home() {
             <SectionHeading
               index="04"
               label="The grid"
-              title="Four drivers. One standard."
+              title="Two drivers. One standard."
               description="Different reference points, same appetite for the long game. Open a dossier to see how each one works."
               tone="dark"
             />
