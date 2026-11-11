@@ -1,6 +1,7 @@
 import Countdown from "@/components/site/Countdown";
 import Helmet from "@/components/site/Helmet";
 import Reveal from "@/components/site/Reveal";
+import ResilientImage from "@/components/site/ResilientImage";
 import SectionHeading from "@/components/site/SectionHeading";
 import {
   DRIVERS,
@@ -72,7 +73,7 @@ export default function Home() {
     <div id="top" className="home-page">
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero__media" aria-hidden="true">
-          <img src={IMAGES.hero} alt="" />
+          <ResilientImage src={IMAGES.hero} alt="" />
         </div>
         <div className="hero__wash" aria-hidden="true" />
         <div className="hero__grid" aria-hidden="true" />
@@ -215,7 +216,7 @@ export default function Home() {
           <div className="team-story__grid">
             <Reveal className="team-story__media">
               <div className="image-frame image-frame--team">
-                <img
+                <ResilientImage
                   src={IMAGES.garage}
                   alt="LSSD Racing engineers and driver reviewing telemetry in the team's race operations room"
                   loading="lazy"
@@ -302,7 +303,7 @@ export default function Home() {
           <div className="machine__grid">
             <Reveal className="machine__visual">
               <div className="machine__visual-frame">
-                <img
+                <ResilientImage
                   src={IMAGES.detail}
                   alt="Close-up of the LSSD 01 race car's carbon rear wing and team livery detail"
                   loading="lazy"
@@ -437,7 +438,7 @@ export default function Home() {
 
           <div className="live-feed__grid">
             <div className="live-feed__player">
-              <img src={IMAGES.rig} alt="LSSD Racing simulator rig ready for the next broadcast" loading="lazy" />
+              <ResilientImage src={IMAGES.rig} alt="LSSD Racing simulator rig ready for the next broadcast" loading="lazy" />
               <div className="live-feed__wash" aria-hidden="true" />
               <div className="live-feed__player-meta">
                 <span className="live-feed__live-pill"><span className="live-dot" /> Feed standby</span>

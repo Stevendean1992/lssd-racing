@@ -1,4 +1,5 @@
 import Reveal from "@/components/site/Reveal";
+import ResilientImage from "@/components/site/ResilientImage";
 import SectionHeading from "@/components/site/SectionHeading";
 import { FAQS, IMAGES, OPEN_ROLES } from "@/data/team";
 import { usePageMeta } from "@/hooks/usePageMeta";
@@ -107,7 +108,7 @@ export default function Join() {
     <div className="join-page">
       <section className="join-hero" aria-labelledby="join-title">
         <div className="join-hero__image" aria-hidden="true">
-          <img src={IMAGES.rig} alt="" />
+          <ResilientImage src={IMAGES.rig} alt="" />
         </div>
         <div className="join-hero__wash" aria-hidden="true" />
         <div className="container join-hero__inner">

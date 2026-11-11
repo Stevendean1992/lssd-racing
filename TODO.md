@@ -36,3 +36,4 @@
 - [x] Each route sets a useful title and description; initial HTML contains meaningful fallback content and social metadata.
 - [x] Supplied LSSD Racing logo is used in the header/footer and social metadata; its cropped emblem is used for the favicon and project `logoUrl`.
 - [x] TypeScript checks, static build, route manifest response, and rendered desktop/mobile pages pass before delivery.
+- [x] Repository is transferable to VS Code with pinned Node/pnpm guidance, local scripts, tracked editor settings/tasks/launch config, `.env.example`, and portable image fallbacks.

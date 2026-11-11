@@ -18,6 +18,7 @@ The content is fictional and internally consistent. No real-world racing series,
 - `wouter` for `/`, `/drivers/:slug`, and `/join`; unknown routes use the supplied NotFound page.
 - Framer Motion for restrained entrance transitions; CSS for marquee, hover treatments, and ambient motion.
 - All team, race, result, sponsor, and driver content lives in `client/src/data/team.ts`.
+- Portable local development uses `ResilientImage` to fall back to the committed hero asset when Manus Managed Storage is unavailable outside the platform.
 - Custom images are delivered through the project’s Managed Storage image paths and referenced directly.
 - The join form validates locally and opens a prefilled email draft; no backend or fake submission state is used.
 - Deployment remains static: `pnpm build:static`, output `dist/public`.

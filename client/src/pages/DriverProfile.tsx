@@ -1,5 +1,6 @@
 import Helmet from "@/components/site/Helmet";
 import Reveal from "@/components/site/Reveal";
+import ResilientImage from "@/components/site/ResilientImage";
 import { DRIVERS, IMAGES, NEXT_RACE, getDriver, getDriverResults } from "@/data/team";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
@@ -39,7 +40,7 @@ export default function DriverProfile() {
     <div className="driver-profile-page" style={{ "--driver-accent": driver.accent } as CSSProperties}>
       <section className="profile-hero" aria-labelledby="driver-name">
         <div className="profile-hero__image" aria-hidden="true">
-          <img src={IMAGES.rig} alt="" />
+          <ResilientImage src={IMAGES.rig} alt="" />
         </div>
         <div className="profile-hero__wash" aria-hidden="true" />
         <div className="container profile-hero__inner">

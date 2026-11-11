@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "LSSD: dev server",
+      "type": "shell",
+      "command": "pnpm dev:local",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "LSSD: type-check",
+      "type": "shell",
+      "command": "pnpm check",
+      "group": "test",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "LSSD: production build",
+      "type": "shell",
+      "command": "pnpm build:static",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
