@@ -1,39 +1,58 @@
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import SiteFooter from "@/components/site/SiteFooter";
+import SiteHeader from "@/components/site/SiteHeader";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import DriverProfile from "@/pages/DriverProfile";
+import Home from "@/pages/Home";
+import Join from "@/pages/Join";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { useEffect } from "react";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
-import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
 
-function Router() {
-  // make sure to consider if you need authentication for certain routes
-  return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
-  );
+function ScrollManager() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      const frame = window.requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "auto", block: "start" });
+      });
+      return () => window.cancelAnimationFrame(frame);
+    }
+
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
+function Router() {
+  return (
+    <>
+      <ScrollManager />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/drivers/:slug" component={DriverProfile} />
+        <Route path="/join" component={Join} />
+        <Route path="/404" component={NotFound} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
+  );
+}
 
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
+      <ThemeProvider defaultTheme="dark">
+        <div className="site-shell">
+          <SiteHeader />
+          <main className="site-main">
+            <Router />
+          </main>
+          <SiteFooter />
+        </div>
       </ThemeProvider>
     </ErrorBoundary>
   );

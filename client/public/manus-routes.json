@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"Home"},{"path":"/drivers/:slug","title":"Driver profile"},{"path":"/join","title":"Join the grid"}]}
