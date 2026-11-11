@@ -173,7 +173,7 @@ export default function Home() {
 
           <div className="manifesto__grid">
             <Reveal className="manifesto__title-wrap">
-              <p className="eyebrow">Independent since 2019</p>
+              <p className="eyebrow">Founded in 2026</p>
               <h2 id="manifesto-title" className="manifesto__title">
                 No respawns.
                 <br />
@@ -187,10 +187,10 @@ export default function Home() {
                 and the clock does not care how good your rig looks.
               </p>
               <p>
-                LSSD was built by a race engineer and two drivers who wanted one thing:
-                  a team where preparation mattered more than noise. Today we compete across
-                  GT Endurance, Stock Car and Rally, with every decision traced back to the
-                  same standard — make the fast lap repeatable.
+                LSSD was built by two U.S. Army veterans who wanted one thing after service:
+                  a reason to stay in touch. Today we compete across GT Endurance, Stock Car
+                  and Rally, with every decision traced back to the same standard — build the
+                  fast lap from the ground up.
               </p>
               <Link className="text-link" href="/join">
                 Read the racing code
@@ -569,19 +569,19 @@ export default function Home() {
                   <div className="results-summary">
                     <div>
                       <span>Championship</span>
-                      <strong>P2</strong>
+                      <strong>00</strong>
                     </div>
                     <div>
                       <span>Points</span>
-                      <strong>108</strong>
+                      <strong>00</strong>
                     </div>
                     <div>
                       <span>Season wins</span>
-                      <strong>03</strong>
+                      <strong>00</strong>
                     </div>
                     <div>
                       <span>Podiums</span>
-                      <strong>04</strong>
+                      <strong>00</strong>
                     </div>
                   </div>
 

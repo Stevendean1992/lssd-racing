@@ -25,7 +25,7 @@ export default function SiteFooter() {
         <div className="site-footer__intro">
           <div className="site-footer__mark">
             <Brand linked={false} compact className="site-footer__brand" />
-            <span>LSSD / 2019—2026</span>
+            <span>LSSD / 2026—2026</span>
           </div>
           <h2>Keep it pinned.</h2>
           <p>
