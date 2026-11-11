@@ -65,7 +65,7 @@ Manus-specific deployment metadata remains in `app.config.ts`, `vite.config.ts`,
 ## Routes
 
 - `/` — Homepage
-- `/drivers/:slug` — Driver dossier (`/drivers/elias-voss`, `/drivers/mina-sato`)
+- `/drivers/:slug` — Driver dossier (`/drivers/steven-dean`, `/drivers/lenny-simpleton`)
 - `/join` — Recruitment and application page
 - `/manus-routes.json` — Static route manifest
 

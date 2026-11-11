@@ -47,7 +47,7 @@ const PROCESS_STEPS = [
 export default function Join() {
   usePageMeta(
     "Join the Grid — Sim Racing Careers",
-    "Apply to join LSSD Racing's 2027 programme across GT Endurance, Stock Car and Rally. Open roles for drivers, race engineers and broadcast operators.",
+    "Apply to join LSSD Racing's 2027 programme across GT Endurance, Stock Car and Rally. Open roles for drivers and race engineers.",
   );
 
   const [form, setForm] = useState<FormState>(INITIAL_FORM);
@@ -120,7 +120,7 @@ export default function Join() {
 
           <div className="join-hero__grid">
             <div>
-              <p className="eyebrow">Drivers / Engineers / Operators</p>
+              <p className="eyebrow">Drivers / Engineers</p>
               <h1 id="join-title">
                 Join
                 <br />
@@ -147,7 +147,7 @@ export default function Join() {
             <span>/</span>
             <span>Strategy</span>
             <span>/</span>
-            <span>Broadcast</span>
+            <span>Telemetry</span>
             <span>/</span>
             <span>No shortcuts</span>
           </div>

@@ -14,7 +14,7 @@
 
 ## Driver profiles
 
-- [x] Each of the two active drivers links to `/drivers/:slug` and has a complete profile with role, nationality, number, stats, biography, and season results.
+- [x] Steven Dean (#16, Stock Car Specialist) and Lenny Simpleton (#70, Rally Specialist) are the two active co-founders, each linked to a complete `/drivers/:slug` profile with zeroed stats and biography.
 - [x] Invalid driver slugs use the supplied NotFound experience.
 
 ## Recruitment
@@ -22,6 +22,7 @@
 - [x] `/join` presents open disciplines, selection process, FAQ, and direct contact details.
 - [x] The application form validates required fields and opens a prefilled email draft; it does not claim a server-side submission.
 - [x] Direct email link remains available if no mail client opens.
+- [x] Recruitment lists only development driver and race engineer openings; the Broadcast Operator seat is removed.
 
 ## Interaction and responsive behavior
 

@@ -668,9 +668,8 @@ export default function Home() {
 
             <Reveal className="join-cta__copy" delay={0.1}>
               <p>
-                We are looking for drivers who can explain their lap, engineers who can
-                challenge the model, and operators who make the broadcast feel like a race.
-                Bring the work. We will bring the grid.
+                We are looking for drivers who can explain their lap and engineers who can
+                challenge the model. Bring the work. We will bring the grid.
               </p>
               <div className="join-cta__actions">
                 <Link className="button button--dark" href="/join">
