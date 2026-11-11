@@ -8,6 +8,7 @@
 - [x] Hero uses a custom cinematic racing image with clear headline, status, and primary/secondary actions.
 - [x] Team manifesto, LSSD 01 machine specifications, driver lineup, race calendar, season results, and partner content are complete and internally consistent.
 - [x] A live countdown to the next scheduled race updates without layout shift.
+- [x] Homepage includes a broadcast-control live-stream feed section with standby state, next broadcast details, stream-link request CTA, and header/footer navigation links.
 
 ## Driver profiles
 

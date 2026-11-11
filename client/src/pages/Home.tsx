@@ -5,6 +5,7 @@ import SectionHeading from "@/components/site/SectionHeading";
 import {
   DRIVERS,
   IMAGES,
+  LIVE_FEED,
   MACHINE_NOTES,
   MACHINE_SPECS,
   NEXT_RACE,
@@ -18,7 +19,7 @@ import {
   getDriver,
 } from "@/data/team";
 import { usePageMeta } from "@/hooks/usePageMeta";
-import { ArrowDown, ArrowRight, ArrowUpRight, CalendarPlus, MoveUpRight } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, CalendarPlus, MoveUpRight, Play, Radio } from "lucide-react";
 import { type CSSProperties, useState } from "react";
 import { Link } from "wouter";
 
@@ -427,11 +428,54 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="live-feed section--ink" id="live-feed" aria-labelledby="live-feed-title">
+        <div className="container">
+          <div className="live-feed__topline">
+            <span>05 / Broadcast control</span>
+            <span className="live-feed__status"><Radio size={13} /> {LIVE_FEED.status}</span>
+          </div>
+
+          <div className="live-feed__grid">
+            <div className="live-feed__player">
+              <img src={IMAGES.rig} alt="LSSD Racing simulator rig ready for the next broadcast" loading="lazy" />
+              <div className="live-feed__wash" aria-hidden="true" />
+              <div className="live-feed__player-meta">
+                <span className="live-feed__live-pill"><span className="live-dot" /> Feed standby</span>
+                <span>CAM / PIT WALL 01</span>
+              </div>
+              <div className="live-feed__play" aria-hidden="true"><Play size={22} fill="currentColor" /></div>
+              <div className="live-feed__player-footer">
+                <span>{LIVE_FEED.channel}</span>
+                <span>Signal reserved / 1080p</span>
+              </div>
+            </div>
+
+            <div className="live-feed__copy">
+              <p className="eyebrow">Live streaming feed</p>
+              <h2 id="live-feed-title">Watch the work<br /><span>before the lights.</span></h2>
+              <p>{LIVE_FEED.description}</p>
+              <div className="live-feed__next">
+                <span>Next broadcast</span>
+                <strong>{LIVE_FEED.nextEvent}</strong>
+                <small>{LIVE_FEED.nextDate}</small>
+              </div>
+              <div className="live-feed__actions">
+                <a className="button button--lime" href="mailto:race@lssdracing.gg?subject=Stream%20link%20request">
+                  Request stream link
+                  <ArrowUpRight size={17} />
+                </a>
+                <span>Channel goes live on race day</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="calendar section--paper" id="calendar" aria-labelledby="calendar-title">
         <div className="container">
           <div className="calendar__header">
             <SectionHeading
-              index="05"
+              index="06"
               label="The calendar"
               title="The clock is already running."
               description="2026 is not finished. Next stop: six hours around Spa, where the weather forecast is less a forecast and more a warning."
@@ -575,7 +619,7 @@ export default function Home() {
       <section className="partners section--ink" id="partners" aria-labelledby="partners-title">
         <div className="container">
           <SectionHeading
-            index="06"
+              index="07"
             label="The partners"
             title="Powered by the details."
             description="The brands that keep the data moving, the rigs alive and the team arriving on time. No logos for the sake of it."
@@ -611,7 +655,7 @@ export default function Home() {
         <div className="join-cta__grid-art" aria-hidden="true" />
         <div className="container">
           <div className="join-cta__meta">
-            <span>07 / Next intake</span>
+            <span>08 / Next intake</span>
             <span>2027 programme</span>
           </div>
 

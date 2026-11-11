@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { label: "Team", href: "/#team" },
   { label: "Machine", href: "/#machine" },
   { label: "Drivers", href: "/#drivers" },
+  { label: "Live", href: "/#live-feed" },
   { label: "Calendar", href: "/#calendar" },
   { label: "Partners", href: "/#partners" },
 ];
@@ -95,7 +96,7 @@ export default function SiteHeader() {
             </a>
           ))}
           <Link href="/join" onClick={() => setMenuOpen(false)} tabIndex={menuOpen ? 0 : -1}>
-            <span className="mobile-nav__index">06</span>
+            <span className="mobile-nav__index">07</span>
             <span>Join the grid</span>
             <ArrowUpRight size={26} strokeWidth={1.4} />
           </Link>
