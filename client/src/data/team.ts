@@ -59,7 +59,7 @@ export type Sponsor = {
 };
 
 export const IMAGES = {
-  hero: "/manus-storage/async-images/8HRPVSKRIaWIs9z59AsFXF/image-1.webp",
+  hero: "/bg-concept-v1.jpg",
   garage: "/manus-storage/async-images/8HRPVSKRIaWIs9z59AsFXF/image-2.webp",
   detail: "/manus-storage/async-images/8HRPVSKRIaWIs9z59AsFXF/image-3.webp",
   rig: "/manus-storage/async-images/8HRPVSKRIaWIs9z59AsFXF/image-4.webp",

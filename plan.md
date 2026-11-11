@@ -28,6 +28,7 @@ The content is fictional and internally consistent. No real-world racing series,
 client/
   index.html                 Metadata, fonts, crawler-visible fallback content
   public/
+    bg-concept-v1.jpg       Supplied multi-discipline hero background
     manus-routes.json        Public route manifest
     lssd-icon.png            Cropped emblem / favicon and project icon
     lssd-logo-original.png   Supplied full-color LSSD Racing logo
