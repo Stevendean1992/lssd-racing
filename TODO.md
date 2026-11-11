@@ -15,6 +15,7 @@
 ## Driver profiles
 
 - [x] Steven Dean (#16, Stock Car Specialist) and Lenny Simpleton (#70, Rally Specialist) are the two active co-founders, each linked to a complete `/drivers/:slug` profile with zeroed stats and biography.
+- [x] Driver dossiers show Steven Dean as born in 1992 at Fort Gordon, GA and Lenny Simpleton as born in 1991 in Sacramento, CA.
 - [x] Invalid driver slugs use the supplied NotFound experience.
 
 ## Recruitment
