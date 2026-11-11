@@ -129,6 +129,7 @@ The user supplied the official **LSSD Racing** logo: a bold red team wordmark ac
 - Two fictional drivers: Elias Voss (#17, DE) and Mina Sato (#24, JP).
 - Three racing programs: GT Endurance, Stock Car, and Rally. The current fictional 2026 calendar uses the Global Endurance Sim Series (GESS) and Virtual GT World Challenge (VGT) for event labels.
 - Upcoming race: 6H Spa Virtual at Circuit de Spa-Francorchamps, 12 December 2026.
+- Team base: United States, with local times displayed in EST.
 - Season results include Sebring, Monza, Nürburgring, and Silverstone.
 - Partners: fictional wordmarks only, clearly presented as team partners.
 

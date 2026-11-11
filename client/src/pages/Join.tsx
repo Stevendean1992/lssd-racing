@@ -114,7 +114,7 @@ export default function Join() {
           <div className="join-hero__topline">
             <span>Careers / LSSD Racing</span>
             <span className="live-dot-label"><span className="live-dot" /> 2027 intake open</span>
-            <span>Rotterdam / NL</span>
+            <span>United States / EST</span>
           </div>
 
           <div className="join-hero__grid">

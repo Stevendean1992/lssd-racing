@@ -44,7 +44,7 @@ function downloadNextRace() {
     `DTEND:${formatIcsDate(end)}`,
     `SUMMARY:${NEXT_RACE.name} — LSSD Racing`,
     `LOCATION:${NEXT_RACE.circuit}, ${NEXT_RACE.location}`,
-    `DESCRIPTION:${NEXT_RACE.series}, ${NEXT_RACE.round}. Lights out at 18:00 UTC.`,
+    `DESCRIPTION:${NEXT_RACE.series}, ${NEXT_RACE.round}. Lights out at 13:00 EST.`,
     "END:VEVENT",
     "END:VCALENDAR",
   ].join("\r\n");
@@ -82,7 +82,7 @@ export default function Home() {
             <span className="hero__kicker">GT Endurance / Stock Car / Rally</span>
             <span className="hero__status">
               <span className="live-dot" aria-hidden="true" />
-              Operational / Rotterdam
+              Operational / United States · EST
             </span>
           </div>
 
@@ -133,7 +133,7 @@ export default function Home() {
                   <span className="race-strip__slash">/</span>
                   <span>12 Dec 2026</span>
                   <span className="race-strip__slash">/</span>
-                  <span>18:00 UTC</span>
+                  <span>13:00 EST</span>
                   <span className="race-strip__slash">/</span>
                   <span>Round 05</span>
                   <span className="race-strip__slash">/</span>
@@ -220,12 +220,12 @@ export default function Home() {
                   alt="LSSD Racing engineers and driver reviewing telemetry in the team's race operations room"
                   loading="lazy"
                 />
-                <span className="image-frame__tag">Race ops / 23:40 CET</span>
+                <span className="image-frame__tag">Race ops / 23:40 EST</span>
                 <span className="image-frame__crop" aria-hidden="true" />
               </div>
               <div className="team-story__media-caption">
-                <span>Rotterdam HQ</span>
-                <span>51.9244° N / 4.4777° E</span>
+                <span>United States HQ</span>
+                <span>Local time / EST</span>
               </div>
             </Reveal>
 
@@ -245,7 +245,7 @@ export default function Home() {
                   what turns a good setup sheet into six hours of controlled pace.
                 </p>
                 <p>
-                  Our base is a converted studio in Rotterdam: three rigs, one operations wall,
+                  Our base is a converted studio in the United States: three rigs, one operations wall,
                   too much coffee, and a garage culture that starts with checking the basics twice.
                 </p>
               </Reveal>
@@ -282,7 +282,7 @@ export default function Home() {
 
               <div className="team-story__signoff">
                 <span className="team-story__signature">LSSD</span>
-                <span>Race operations<br />Rotterdam / NL</span>
+                <span>Race operations<br />United States / EST</span>
               </div>
             </div>
           </div>
@@ -529,7 +529,7 @@ export default function Home() {
                   <CalendarPlus size={16} />
                   Add to calendar
                 </button>
-                <span>18:00 UTC</span>
+                <span>13:00 EST</span>
               </div>
               <span className="race-poster__slash" aria-hidden="true">//</span>
             </Reveal>

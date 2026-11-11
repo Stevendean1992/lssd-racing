@@ -71,7 +71,7 @@ export default function SiteFooter() {
 
       <div className="site-footer__bottom">
         <span>© 2026 LSSD Racing. Built for the virtual grid.</span>
-        <span className="site-footer__coords">51.9244° N / 4.4777° E · Rotterdam, NL</span>
+        <span className="site-footer__coords">United States · EST local time</span>
         <a href="#top" className="site-footer__top-link">
           Back to top
           <ArrowUpRight size={14} />

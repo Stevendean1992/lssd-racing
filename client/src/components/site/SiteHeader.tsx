@@ -85,7 +85,7 @@ export default function SiteHeader() {
       <div className={`mobile-nav ${menuOpen ? "is-open" : ""}`} id="mobile-navigation" aria-hidden={!menuOpen}>
         <div className="mobile-nav__top">
           <span className="eyebrow">Navigation / 2026</span>
-          <span className="mobile-nav__coords">51.9244° N / 4.4777° E</span>
+          <span className="mobile-nav__coords">United States / EST</span>
         </div>
         <nav className="mobile-nav__links" aria-label="Mobile navigation">
           {NAV_ITEMS.map((item, index) => (
@@ -103,7 +103,7 @@ export default function SiteHeader() {
         </nav>
         <div className="mobile-nav__footer">
           <a href="mailto:race@lssdracing.gg">race@lssdracing.gg</a>
-          <span>Rotterdam, NL</span>
+          <span>United States / EST</span>
         </div>
       </div>
     </>

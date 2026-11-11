@@ -47,8 +47,8 @@ export default function NotFound() {
           Back to the garage
         </button>
         <div className="not-found__coords">
-          <span>51.9244° N</span>
-          <span>4.4777° E</span>
+          <span>United States</span>
+          <span>EST local time</span>
           <span>No signal</span>
         </div>
       </div>
