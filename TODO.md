@@ -13,7 +13,7 @@
 - [x] Team location is shown as United States and visible local race/operations times use EST.
 - [x] Team, driver, and season performance statistics are initialized at zero; no prior wins, titles, starts, podiums, poles, fastest laps, or points are claimed.
 - [x] Homepage includes a broadcast-control live-stream feed section connected to the `@LSSDRacing` YouTube live channel, with standby state, next broadcast details, YouTube CTA, and header/footer navigation links.
-- [x] Homepage includes a News section with a dated release article announcing THE Production Car Challenge @ViR as a GT Endurance event, its iRacing platform, December 18–19 window, VIR Grand Course setting, four-hour format, team preparation, and TBA start time.
+- [x] Homepage includes a News section with a dated release article announcing THE Production Car Challenge @ViR as a GT Endurance event, with all preparation focused on the GT Endurance car, its iRacing platform, December 18–19 window, VIR Grand Course setting, four-hour format, and TBA start time.
 
 ## Driver profiles
 
