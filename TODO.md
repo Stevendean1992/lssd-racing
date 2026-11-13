@@ -11,7 +11,7 @@
 - [x] A live countdown to the next scheduled race updates without layout shift.
 - [x] Team location is shown as United States and visible local race/operations times use EST.
 - [x] Team, driver, and season performance statistics are initialized at zero; no prior wins, titles, starts, podiums, poles, fastest laps, or points are claimed.
-- [x] Homepage includes a broadcast-control live-stream feed section with standby state, next broadcast details, stream-link request CTA, and header/footer navigation links.
+- [x] Homepage includes a broadcast-control live-stream feed section connected to the `@LSSDRacing` YouTube live channel, with standby state, next broadcast details, YouTube CTA, and header/footer navigation links.
 
 ## Driver profiles
 

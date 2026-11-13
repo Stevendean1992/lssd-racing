@@ -440,7 +440,13 @@ export default function Home() {
           </div>
 
           <div className="live-feed__grid">
-            <div className="live-feed__player">
+            <a
+              className="live-feed__player"
+              href={LIVE_FEED.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open LSSD Racing live stream on YouTube"
+            >
               <ResilientImage src={IMAGES.rig} alt="LSSD Racing simulator rig ready for the next broadcast" loading="lazy" />
               <div className="live-feed__wash" aria-hidden="true" />
               <div className="live-feed__player-meta">
@@ -450,9 +456,9 @@ export default function Home() {
               <div className="live-feed__play" aria-hidden="true"><Play size={22} fill="currentColor" /></div>
               <div className="live-feed__player-footer">
                 <span>{LIVE_FEED.channel}</span>
-                <span>Signal reserved / 1080p</span>
+                <span>Open live channel / YouTube</span>
               </div>
-            </div>
+            </a>
 
             <div className="live-feed__copy">
               <p className="eyebrow">Live streaming feed</p>
@@ -464,11 +470,11 @@ export default function Home() {
                 <small>{LIVE_FEED.nextDate}</small>
               </div>
               <div className="live-feed__actions">
-                <a className="button button--lime" href="mailto:race@lssdracing.gg?subject=Stream%20link%20request">
-                  Request stream link
+                <a className="button button--lime" href={LIVE_FEED.liveUrl} target="_blank" rel="noreferrer">
+                  Watch on YouTube
                   <ArrowUpRight size={17} />
                 </a>
-                <span>Channel goes live on race day</span>
+                <span>@LSSDRacing / live channel</span>
               </div>
             </div>
           </div>

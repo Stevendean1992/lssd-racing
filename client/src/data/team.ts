@@ -99,7 +99,8 @@ export const LIVE_FEED = {
     "When LSSD goes live, this is where the race feed, pit wall and post-session debrief meet. The next broadcast is scheduled around the Spa endurance round.",
   nextEvent: "6H Spa Virtual",
   nextDate: "12 Dec 2026 / 13:00 EST",
-  channel: "LSSD Racing Broadcast",
+  channel: "LSSD Racing / YouTube",
+  liveUrl: "https://www.youtube.com/@LSSDRacing/live",
 };
 
 export const DRIVERS: Driver[] = [

@@ -133,6 +133,7 @@ The user supplied the official **LSSD Racing** logo: a bold red team wordmark ac
 - Team base: United States, with local times displayed in EST.
 - The team and driver performance record starts at zero; no completed season results are displayed yet.
 - Open recruitment is limited to development driver and race engineer roles; there is no Broadcast Operator seat opening.
+- Live-feed player and CTA link to the public LSSD Racing YouTube live channel at `@LSSDRacing`.
 - Partners: fictional wordmarks only, clearly presented as team partners.
 
 ## Constraints
