@@ -2061,7 +2061,7 @@ div[id="application-form"] {
   margin-top: clamp(56px, 8vw, 104px);
   border-top: 1px solid var(--ink-line);
   border-bottom: 1px solid var(--ink-line);
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .news__fact {
   min-height: 118px;

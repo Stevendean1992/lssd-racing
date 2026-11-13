@@ -108,14 +108,15 @@ export const NEWS_RELEASE = {
   date: "13 Nov 2026",
   title: "LSSD Racing sets its first marker at VIR.",
   deck:
-    "The U.S.-based sim racing team will take on THE Production Car Challenge @ViR, a four-hour iRacing special event built around the VIR Grand Course.",
+    "The U.S.-based sim racing team will take on THE Production Car Challenge @ViR, a four-hour GT Endurance event on iRacing built around the VIR Grand Course.",
   paragraphs: [
-    "LSSD Racing today confirmed its next competitive target: THE Production Car Challenge @ViR, running December 18–19, 2026 on iRacing. The four-hour special event will take the team to Virginia International Raceway’s Grand Course for its first clear marker of the 2026 programme.",
-    "The event is a natural fit for the team’s two-driver operating model. Steven Dean will lead the Stock Car preparation and race-strategy work, while Lenny Simpleton brings the same methodical approach he applies to Rally preparation. Together, they will use the Production Car Challenge as a test of communication, consistency and decision-making over the full distance.",
+    "LSSD Racing today confirmed its next competitive target: THE Production Car Challenge @ViR, a GT Endurance event running December 18–19, 2026 on iRacing. The four-hour special event will take the team to Virginia International Raceway’s Grand Course for its first clear marker of the 2026 programme.",
+    "The GT Endurance event is a natural fit for the team’s two-driver operating model. Steven Dean will lead the Stock Car preparation and race-strategy work, while Lenny Simpleton brings the same methodical approach he applies to Rally preparation. Together, they will use the Production Car Challenge as a test of communication, consistency and decision-making over the full distance.",
     "LSSD enters the event with a clean record and no results to defend. The objective is straightforward: establish a repeatable process, learn what the race asks of the team, and carry the useful parts into the next stint, stage and restart. Start time details remain TBA; updates will be carried through the live feed and the team’s YouTube channel.",
   ],
   facts: [
     { label: "Event", value: "THE Production Car Challenge @ViR" },
+    { label: "Discipline", value: "GT Endurance" },
     { label: "Platform", value: "iRacing" },
     { label: "Window", value: "18–19 Dec 2026" },
     { label: "Format", value: "4-hour special event" },
