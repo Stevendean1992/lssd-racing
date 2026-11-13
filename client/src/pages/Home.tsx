@@ -9,6 +9,7 @@ import {
   LIVE_FEED,
   MACHINES,
   NEXT_RACE,
+  NEWS_RELEASE,
   OPEN_ROLES,
   RACE_CALENDAR,
   RACING_DISCIPLINES,
@@ -481,11 +482,43 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="news section--paper" id="news" aria-labelledby="news-title">
+        <div className="container">
+          <div className="news__topline">
+            <span>{NEWS_RELEASE.label}</span>
+            <span>{NEWS_RELEASE.date} / United States · EST</span>
+          </div>
+
+          <article className="news__article">
+            <div className="news__headline">
+              <p className="eyebrow eyebrow--dark">LSSD Racing / Official release</p>
+              <h2 id="news-title">{NEWS_RELEASE.title}</h2>
+              <p className="news__deck">{NEWS_RELEASE.deck}</p>
+            </div>
+
+            <div className="news__body">
+              {NEWS_RELEASE.paragraphs.map(paragraph => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          </article>
+
+          <div className="news__facts" aria-label="Upcoming race facts">
+            {NEWS_RELEASE.facts.map(fact => (
+              <div className="news__fact" key={fact.label}>
+                <span>{fact.label}</span>
+                <strong>{fact.value}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="calendar section--paper" id="calendar" aria-labelledby="calendar-title">
         <div className="container">
           <div className="calendar__header">
             <SectionHeading
-              index="06"
+              index="07"
               label="The calendar"
               title="The clock is already running."
               description="Next stop: four hours around VIR in iRacing’s Production Car Challenge, where the track is technical and the schedule is the only thing still marked TBA."
@@ -629,7 +662,7 @@ export default function Home() {
       <section className="partners section--ink" id="partners" aria-labelledby="partners-title">
         <div className="container">
           <SectionHeading
-              index="07"
+              index="08"
             label="The partners"
             title="Powered by the details."
             description="The brands that keep the data moving, the rigs alive and the team arriving on time. No logos for the sake of it."

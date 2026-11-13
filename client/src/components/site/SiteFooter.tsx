@@ -7,6 +7,7 @@ const FOOTER_LINKS = [
   { label: "Machine", href: "/#machine" },
   { label: "Drivers", href: "/#drivers" },
   { label: "Live feed", href: "/#live-feed" },
+  { label: "News", href: "/#news" },
   { label: "Calendar", href: "/#calendar" },
   { label: "Partners", href: "/#partners" },
 ];
