@@ -64,7 +64,7 @@ function downloadNextRace() {
 export default function Home() {
   usePageMeta(
     "LSSD Racing | Engineered for the Limit",
-    "LSSD Racing competes in GT Endurance, Stock Car and Rally racing. Meet the drivers, explore the LSSD 01, follow the 2026 calendar and apply to join the grid.",
+    "LSSD Racing competes in GT Endurance, Stock Car and Rally racing. Meet the drivers, explore the BMW M4 GT3, follow the 2026 calendar and apply to join the grid.",
   );
 
   const [calendarView, setCalendarView] = useState<CalendarView>("upcoming");
@@ -116,7 +116,7 @@ export default function Home() {
                   <ArrowRight size={17} />
                 </a>
                 <a className="button button--ghost" href="#machine">
-                  Explore LSSD 01
+                Explore BMW M4 GT3
                   <ArrowUpRight size={17} />
                 </a>
               </div>
@@ -295,8 +295,8 @@ export default function Home() {
           <SectionHeading
             index="03"
             label="The machine"
-              title="LSSD 01 / GT Endurance"
-              description="Our GT endurance homologation is developed for one job: holding a reference when the fuel load, tyre life and track state stop agreeing with each other."
+              title="BMW M4 GT3 / GT Endurance"
+              description="Our BMW M4 GT3 is the GT endurance foundation for LSSD: a 590 hp customer race car built to keep its reference when fuel load, tyre life and track state stop agreeing with each other."
             tone="lime"
           />
 
@@ -305,16 +305,16 @@ export default function Home() {
               <div className="machine__visual-frame">
                 <ResilientImage
                   src={IMAGES.detail}
-                  alt="Close-up of the LSSD 01 race car's carbon rear wing and team livery detail"
+                  alt="Close-up of the BMW M4 GT3 race car's carbon rear wing and team livery detail"
                   loading="lazy"
                 />
-                <span className="machine__visual-index">01 / Rear aero</span>
+                <span className="machine__visual-index">BMW M4 GT3 / Rear aero</span>
                 <span className="machine__visual-coords">50.4372° N / 5.9714° E</span>
                 <span className="machine__visual-stripe" aria-hidden="true" />
               </div>
               <div className="machine__visual-caption">
                 <span>Endurance aero package</span>
-                <span>Spec / 26.1</span>
+                <span>M4 GT3 / Endurance</span>
               </div>
             </Reveal>
 
@@ -322,7 +322,7 @@ export default function Home() {
               <div className="machine__data-head">
                 <div>
                   <span className="eyebrow eyebrow--dark">Chassis no.</span>
-                  <span className="machine__chassis">LSSD—01</span>
+                  <span className="machine__chassis">BMW—M4 GT3</span>
                 </div>
                 <span className="machine__class">GT3</span>
               </div>

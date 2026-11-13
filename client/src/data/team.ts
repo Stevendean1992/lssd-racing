@@ -209,21 +209,21 @@ export const RACE_CALENDAR: Race[] = [
 export const SEASON_RESULTS: SeasonResult[] = [];
 
 export const MACHINE_SPECS = [
-  { label: "Chassis", value: "LSSD 01 / Evo" },
+  { label: "Chassis", value: "BMW M4 GT3" },
   { label: "Class", value: "GT3" },
-  { label: "Engine", value: "4.0L V8" },
-  { label: "Power", value: "590 bhp" },
-  { label: "Mass", value: "1,305 kg" },
-  { label: "Downforce", value: "1,120 kg" },
-  { label: "Top speed", value: "295 km/h" },
-  { label: "Fuel cell", value: "100 L" },
+  { label: "Engine", value: "3.0L TwinPower Turbo I6" },
+  { label: "Power", value: "Up to 590 hp" },
+  { label: "Transmission", value: "6-speed sequential" },
+  { label: "Fuel cell", value: "120 L / 31.7 gal" },
+  { label: "Length", value: "5,020 mm" },
+  { label: "Wheelbase", value: "2,917 mm" },
 ];
 
 export const MACHINE_NOTES = [
-  "Low-drag endurance aero package",
-  "Driver-adjustable traction control",
-  "Switchable hybrid deployment map",
-  "Endurance-spec brake ducts",
+  "Carbon-fiber GT3 bodywork",
+  "Adjustable front splitter and rear wing",
+  "Driver-adjustable traction and braking systems",
+  "BMW M Track Cockpit for race setup control",
 ];
 
 export const SPONSORS: Sponsor[] = [
