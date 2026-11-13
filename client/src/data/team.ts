@@ -208,22 +208,61 @@ export const RACE_CALENDAR: Race[] = [
 
 export const SEASON_RESULTS: SeasonResult[] = [];
 
-export const MACHINE_SPECS = [
-  { label: "Chassis", value: "BMW M4 GT3" },
-  { label: "Class", value: "GT3" },
-  { label: "Engine", value: "3.0L TwinPower Turbo I6" },
-  { label: "Power", value: "Up to 590 hp" },
-  { label: "Transmission", value: "6-speed sequential" },
-  { label: "Fuel cell", value: "120 L / 31.7 gal" },
-  { label: "Length", value: "5,020 mm" },
-  { label: "Wheelbase", value: "2,917 mm" },
-];
-
-export const MACHINE_NOTES = [
-  "Carbon-fiber GT3 bodywork",
-  "Adjustable front splitter and rear wing",
-  "Driver-adjustable traction and braking systems",
-  "BMW M Track Cockpit for race setup control",
+export const MACHINES = [
+  {
+    id: "bmw-m4-gt3",
+    discipline: "GT Endurance",
+    title: "BMW M4 GT3",
+    description:
+      "The GT endurance foundation for LSSD: a 590 hp customer race car built to keep its reference when fuel load, tyre life and track state stop agreeing with each other.",
+    image: IMAGES.detail,
+    imageAlt: "Close-up of the BMW M4 GT3 race car's carbon rear wing and team livery detail",
+    visualIndex: "BMW M4 GT3 / Rear aero",
+    visualCaption: "M4 GT3 / Endurance",
+    chassis: "BMW—M4 GT3",
+    classLabel: "GT3",
+    specs: [
+      { label: "Engine", value: "3.0L TwinPower Turbo I6" },
+      { label: "Power", value: "Up to 590 hp" },
+      { label: "Transmission", value: "6-speed sequential" },
+      { label: "Fuel cell", value: "120 L / 31.7 gal" },
+      { label: "Length", value: "5,020 mm" },
+      { label: "Wheelbase", value: "2,917 mm" },
+    ],
+    notes: [
+      "Carbon-fiber GT3 bodywork",
+      "Adjustable front splitter and rear wing",
+      "Driver-adjustable traction and braking systems",
+      "BMW M Track Cockpit for race setup control",
+    ],
+  },
+  {
+    id: "chevrolet-camaro-zl1",
+    discipline: "Stock Car",
+    title: "NASCAR Chevrolet Camaro ZL1",
+    description:
+      "LSSD's Stock Car platform: a NASCAR Next Gen Camaro built around mechanical grip, close-quarters racecraft and the discipline to make every restart count.",
+    image: IMAGES.hero,
+    imageAlt: "Chevrolet Camaro ZL1 Next Gen stock car charging through a night race",
+    visualIndex: "NASCAR Camaro ZL1 / Stock Car",
+    visualCaption: "ZL1 / Cup car",
+    chassis: "CHEVY—CAMARO ZL1",
+    classLabel: "STOCK CAR",
+    specs: [
+      { label: "Engine", value: "5.8L naturally aspirated V8" },
+      { label: "Power", value: "Track-dependent output" },
+      { label: "Transmission", value: "5-speed sequential" },
+      { label: "Fuel cell", value: "127 L / 32 gal" },
+      { label: "Weight", value: "1,342 kg / 2,960 lb" },
+      { label: "Wheelbase", value: "2,794 mm" },
+    ],
+    notes: [
+      "Composite symmetric Camaro ZL1 body",
+      "Steel-tube Next Gen chassis",
+      "Full carbon undertray and rear diffuser",
+      "Adjustable double-wishbone suspension",
+    ],
+  },
 ];
 
 export const SPONSORS: Sponsor[] = [

@@ -7,8 +7,7 @@ import {
   DRIVERS,
   IMAGES,
   LIVE_FEED,
-  MACHINE_NOTES,
-  MACHINE_SPECS,
+  MACHINES,
   NEXT_RACE,
   OPEN_ROLES,
   RACE_CALENDAR,
@@ -64,7 +63,7 @@ function downloadNextRace() {
 export default function Home() {
   usePageMeta(
     "LSSD Racing | Engineered for the Limit",
-    "LSSD Racing competes in GT Endurance, Stock Car and Rally racing. Meet the drivers, explore the BMW M4 GT3, follow the 2026 calendar and apply to join the grid.",
+    "LSSD Racing competes in GT Endurance, Stock Car and Rally racing. Meet the drivers, explore the BMW M4 GT3 and NASCAR Chevrolet Camaro ZL1, follow the 2026 calendar and apply to join the grid.",
   );
 
   const [calendarView, setCalendarView] = useState<CalendarView>("upcoming");
@@ -107,7 +106,7 @@ export default function Home() {
 
             <div className="hero__copy">
               <p>
-                We don’t chase clean laps. We engineer them. Two drivers, one machine,
+                We don’t chase clean laps. We engineer them. Two drivers, two machines,
                 and a race programme built for the hour when everyone else starts guessing.
               </p>
               <div className="hero__actions">
@@ -294,63 +293,67 @@ export default function Home() {
         <div className="container">
           <SectionHeading
             index="03"
-            label="The machine"
-              title="BMW M4 GT3 / GT Endurance"
-              description="Our BMW M4 GT3 is the GT endurance foundation for LSSD: a 590 hp customer race car built to keep its reference when fuel load, tyre life and track state stop agreeing with each other."
+            label="The machines"
+            title="Two cars. Three disciplines."
+            description="The BMW M4 GT3 anchors GT Endurance. The Chevrolet Camaro ZL1 carries the Stock Car programme. Both demand the same LSSD standard: make the fast lap repeatable."
             tone="lime"
           />
 
-          <div className="machine__grid">
-            <Reveal className="machine__visual">
-              <div className="machine__visual-frame">
-                <ResilientImage
-                  src={IMAGES.detail}
-                  alt="Close-up of the BMW M4 GT3 race car's carbon rear wing and team livery detail"
-                  loading="lazy"
-                />
-                <span className="machine__visual-index">BMW M4 GT3 / Rear aero</span>
-                <span className="machine__visual-coords">50.4372° N / 5.9714° E</span>
-                <span className="machine__visual-stripe" aria-hidden="true" />
-              </div>
-              <div className="machine__visual-caption">
-                <span>Endurance aero package</span>
-                <span>M4 GT3 / Endurance</span>
-              </div>
-            </Reveal>
-
-            <Reveal className="machine__data" delay={0.12}>
-              <div className="machine__data-head">
-                <div>
-                  <span className="eyebrow eyebrow--dark">Chassis no.</span>
-                  <span className="machine__chassis">BMW—M4 GT3</span>
+          {MACHINES.map((machine, index) => (
+            <div className={`machine__grid ${index > 0 ? "machine__grid--secondary" : ""}`} key={machine.id}>
+              <Reveal className="machine__visual">
+                <div className="machine__visual-frame">
+                  <ResilientImage
+                    src={machine.image}
+                    alt={machine.imageAlt}
+                    loading="lazy"
+                  />
+                  <span className="machine__visual-index">{machine.visualIndex}</span>
+                  <span className="machine__visual-coords">{machine.discipline} / United States</span>
+                  <span className="machine__visual-stripe" aria-hidden="true" />
                 </div>
-                <span className="machine__class">GT3</span>
-              </div>
+                <div className="machine__visual-caption">
+                  <span>{machine.discipline} package</span>
+                  <span>{machine.visualCaption}</span>
+                </div>
+              </Reveal>
 
-              <div className="spec-list">
-                {MACHINE_SPECS.map(spec => (
-                  <div className="spec-row" key={spec.label}>
-                    <span>{spec.label}</span>
-                    <span>{spec.value}</span>
+              <Reveal className="machine__data" delay={0.12}>
+                <div className="machine__data-head">
+                  <div>
+                    <span className="eyebrow eyebrow--dark">{machine.discipline}</span>
+                    <span className="machine__chassis">{machine.chassis}</span>
                   </div>
-                ))}
-              </div>
+                  <span className="machine__class">{machine.classLabel}</span>
+                </div>
 
-              <div className="machine__notes">
-                <span className="eyebrow eyebrow--dark">Build notes</span>
-                <ul>
-                  {MACHINE_NOTES.map(note => (
-                    <li key={note}>{note}</li>
+                <p className="machine__description">{machine.description}</p>
+
+                <div className="spec-list">
+                  {machine.specs.map(spec => (
+                    <div className="spec-row" key={spec.label}>
+                      <span>{spec.label}</span>
+                      <span>{spec.value}</span>
+                    </div>
                   ))}
-                </ul>
-              </div>
+                </div>
 
-              <a className="button button--dark" href="#drivers">
-                Meet the drivers
-                <ArrowRight size={17} />
-              </a>
-            </Reveal>
-          </div>
+                <div className="machine__notes">
+                  <span className="eyebrow eyebrow--dark">Build notes</span>
+                  <ul>
+                    {machine.notes.map(note => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <a className="button button--dark" href="#drivers">
+                  Meet the drivers
+                  <ArrowRight size={17} />
+                </a>
+              </Reveal>
+            </div>
+          ))}
 
           <div className="telemetry-strip" aria-label="Illustrative telemetry trace">
             <div className="telemetry-strip__labels">
