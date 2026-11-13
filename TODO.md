@@ -9,6 +9,7 @@
 - [x] Team manifesto, BMW M4 GT3 GT Endurance and Chevrolet Camaro ZL1 Stock Car specifications, driver lineup, race calendar, season results, and partner content are complete and internally consistent.
 - [x] Machines section uses vehicle-specific committed photos for the BMW M4 GT3 and NASCAR Chevrolet Camaro ZL1 entries.
 - [x] A live countdown to the next scheduled race updates without layout shift.
+- [x] Schedule contains only THE Production Car Challenge @ViR iRacing special event, December 18–19, 2026, at VIR Grand Course; all other events are removed and the start time is shown as TBA.
 - [x] Team location is shown as United States and visible local race/operations times use EST.
 - [x] Team, driver, and season performance statistics are initialized at zero; no prior wins, titles, starts, podiums, poles, fastest laps, or points are claimed.
 - [x] Homepage includes a broadcast-control live-stream feed section connected to the `@LSSDRacing` YouTube live channel, with standby state, next broadcast details, YouTube CTA, and header/footer navigation links.

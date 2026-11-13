@@ -96,9 +96,9 @@ export const LIVE_FEED = {
   status: "Standby",
   title: "The next session is already loading.",
   description:
-    "When LSSD goes live, this is where the race feed, pit wall and post-session debrief meet. The next broadcast is scheduled around the Spa endurance round.",
-  nextEvent: "6H Spa Virtual",
-  nextDate: "12 Dec 2026 / 13:00 EST",
+    "When LSSD goes live, this is where the race feed, pit wall and post-session debrief meet. The next broadcast is scheduled around the iRacing Production Car Challenge at VIR.",
+  nextEvent: "THE Production Car Challenge @ViR",
+  nextDate: "18–19 Dec 2026 / time TBA",
   channel: "LSSD Racing / YouTube",
   liveUrl: "https://www.youtube.com/@LSSDRacing/live",
 };
@@ -145,69 +145,22 @@ export const DRIVERS: Driver[] = [
 ];
 
 export const NEXT_RACE: Race = {
-  id: "spa-2026",
-  date: "2026-12-12T18:00:00Z",
-  displayDate: "12.12.2026",
+  id: "production-car-challenge-vir-2026",
+  date: "2026-12-18T00:00:00-05:00",
+  displayDate: "18–19.12.2026",
   month: "DEC",
-  day: "12",
+  day: "18–19",
   year: "2026",
-  name: "6H Spa Virtual",
-  circuit: "Circuit de Spa-Francorchamps",
-  location: "Stavelot, Belgium",
-  series: "Global Endurance Sim Series",
-  duration: "6 hours",
-  round: "Round 05",
+  name: "THE Production Car Challenge @ViR",
+  circuit: "Virginia International Raceway / Grand Course",
+  location: "Alton, Virginia, USA",
+  series: "iRacing Special Event",
+  duration: "4 hours",
+  round: "Special Event",
   status: "upcoming",
 };
 
-export const RACE_CALENDAR: Race[] = [
-  NEXT_RACE,
-  {
-    id: "bathurst-2027",
-    date: "2027-01-16T19:00:00Z",
-    displayDate: "16.01.2027",
-    month: "JAN",
-    day: "16",
-    year: "2027",
-    name: "Bathurst 6H",
-    circuit: "Mount Panorama",
-    location: "Bathurst, Australia",
-    series: "Global Endurance Sim Series",
-    duration: "6 hours",
-    round: "Round 06",
-    status: "upcoming",
-  },
-  {
-    id: "sebring-2027",
-    date: "2027-02-20T14:00:00Z",
-    displayDate: "20.02.2027",
-    month: "FEB",
-    day: "20",
-    year: "2027",
-    name: "Sebring 8H",
-    circuit: "Sebring International Raceway",
-    location: "Florida, USA",
-    series: "Global Endurance Sim Series",
-    duration: "8 hours",
-    round: "Round 07",
-    status: "upcoming",
-  },
-  {
-    id: "monza-2027",
-    date: "2027-03-21T13:00:00Z",
-    displayDate: "21.03.2027",
-    month: "MAR",
-    day: "21",
-    year: "2027",
-    name: "12H Monza",
-    circuit: "Autodromo Nazionale Monza",
-    location: "Monza, Italy",
-    series: "Global Endurance Sim Series",
-    duration: "12 hours",
-    round: "Round 08",
-    status: "upcoming",
-  },
-];
+export const RACE_CALENDAR: Race[] = [NEXT_RACE];
 
 export const SEASON_RESULTS: SeasonResult[] = [];
 

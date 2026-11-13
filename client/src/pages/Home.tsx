@@ -44,7 +44,7 @@ function downloadNextRace() {
     `DTEND:${formatIcsDate(end)}`,
     `SUMMARY:${NEXT_RACE.name} — LSSD Racing`,
     `LOCATION:${NEXT_RACE.circuit}, ${NEXT_RACE.location}`,
-    `DESCRIPTION:${NEXT_RACE.series}, ${NEXT_RACE.round}. Lights out at 13:00 EST.`,
+    `DESCRIPTION:${NEXT_RACE.series}, ${NEXT_RACE.round}. Event window: ${NEXT_RACE.displayDate}. Start time TBA.`,
     "END:VEVENT",
     "END:VCALENDAR",
   ].join("\r\n");
@@ -53,7 +53,7 @@ function downloadNextRace() {
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = "lssd-racing-spa-virtual.ics";
+  anchor.download = "lssd-racing-production-car-challenge-vir.ics";
   document.body.appendChild(anchor);
   anchor.click();
   anchor.remove();
@@ -123,19 +123,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero__race-strip" aria-label={`Next race: ${NEXT_RACE.name}, ${NEXT_RACE.displayDate}`}>
-          <div className="hero__race-strip-label">Next race</div>
+        <div className="hero__race-strip" aria-label={`Next event: ${NEXT_RACE.name}, ${NEXT_RACE.displayDate}`}>
+          <div className="hero__race-strip-label">Next event</div>
           <div className="race-strip__viewport">
             <div className="race-strip__track">
               {[0, 1].map(group => (
                 <div className="race-strip__group" key={group} aria-hidden={group === 1}>
-                  <span>6H Spa Virtual</span>
+                  <span>{NEXT_RACE.name}</span>
                   <span className="race-strip__slash">/</span>
-                  <span>12 Dec 2026</span>
+                  <span>{NEXT_RACE.displayDate}</span>
                   <span className="race-strip__slash">/</span>
-                  <span>13:00 EST</span>
+                  <span>TIME TBA / EST</span>
                   <span className="race-strip__slash">/</span>
-                  <span>Round 05</span>
+                  <span>{NEXT_RACE.series}</span>
                   <span className="race-strip__slash">/</span>
                 </div>
               ))}
@@ -488,7 +488,7 @@ export default function Home() {
               index="06"
               label="The calendar"
               title="The clock is already running."
-              description="2026 is not finished. Next stop: six hours around Spa, where the weather forecast is less a forecast and more a warning."
+              description="Next stop: four hours around VIR in iRacing’s Production Car Challenge, where the track is technical and the schedule is the only thing still marked TBA."
               tone="light"
             />
 
@@ -521,8 +521,8 @@ export default function Home() {
           <div className="calendar__feature">
             <Reveal className="race-poster">
               <div className="race-poster__top">
-                <span className="race-poster__eyebrow">Next race / Round 05</span>
-                <span className="race-poster__series">GESS</span>
+                <span className="race-poster__eyebrow">Next event / {NEXT_RACE.round}</span>
+                <span className="race-poster__series">iRACING</span>
               </div>
               <div className="race-poster__date">
                 <span className="race-poster__day">{NEXT_RACE.day}</span>
@@ -531,7 +531,7 @@ export default function Home() {
               <h3 id="calendar-title">{NEXT_RACE.name}</h3>
               <p className="race-poster__circuit">{NEXT_RACE.circuit}<br /><span>{NEXT_RACE.location}</span></p>
               <div className="race-poster__countdown">
-                <span className="race-poster__countdown-label">Lights out in</span>
+                <span className="race-poster__countdown-label">Event window opens in</span>
                 <Countdown date={NEXT_RACE.date} />
               </div>
               <div className="race-poster__actions">
@@ -539,7 +539,7 @@ export default function Home() {
                   <CalendarPlus size={16} />
                   Add to calendar
                 </button>
-                <span>13:00 EST</span>
+                <span>Time TBA / EST</span>
               </div>
               <span className="race-poster__slash" aria-hidden="true">//</span>
             </Reveal>

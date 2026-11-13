@@ -43,7 +43,7 @@ export default function Countdown({ date, compact = false }: CountdownProps) {
   }, [target]);
 
   return (
-    <div className={`countdown ${compact ? "countdown--compact" : ""}`} role="timer" aria-label="Time until the next race">
+    <div className={`countdown ${compact ? "countdown--compact" : ""}`} role="timer" aria-label="Time until the next event">
       {UNITS.map(unit => (
         <div className="countdown__unit" key={unit.key}>
           <span className="countdown__value">{String(timeLeft[unit.key]).padStart(2, "0")}</span>

@@ -177,7 +177,7 @@ export default function DriverProfile() {
 
           <div className="profile-next-race">
             <div>
-              <span className="eyebrow">Next race / Round 05</span>
+              <span className="eyebrow">Next event / {NEXT_RACE.round}</span>
               <strong>{NEXT_RACE.name}</strong>
               <span>{NEXT_RACE.circuit} · {NEXT_RACE.displayDate}</span>
             </div>
