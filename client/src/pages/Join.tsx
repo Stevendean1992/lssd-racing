@@ -100,7 +100,7 @@ export default function Join() {
       form.message.trim(),
     ].join("\n");
 
-    window.location.href = `mailto:race@lssdracing.gg?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:LSSDRacing@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setDraftOpened(true);
   };
 
@@ -232,8 +232,8 @@ export default function Join() {
 
               <div className="join-apply__contact">
                 <span>Prefer to write directly?</span>
-                <a href="mailto:race@lssdracing.gg">
-                  race@lssdracing.gg
+                <a href="mailto:LSSDRacing@gmail.com">
+                  LSSDRacing@gmail.com
                   <ArrowUpRight size={17} />
                 </a>
               </div>
@@ -372,7 +372,7 @@ export default function Join() {
                 Still uncertain? Write to us with the part that does not fit in the form.
                 We would rather answer a good question than lose a good applicant.
               </p>
-              <a className="text-link text-link--dark" href="mailto:race@lssdracing.gg">
+              <a className="text-link text-link--dark" href="mailto:LSSDRacing@gmail.com">
                 Ask the team
                 <ArrowUpRight size={18} />
               </a>
@@ -402,8 +402,8 @@ export default function Join() {
             <p className="eyebrow eyebrow--dark">One inbox. Real people.</p>
             <h2 id="join-contact-title">Bring the work.<br />We’ll bring the grid.</h2>
           </div>
-          <a className="button button--dark" href="mailto:race@lssdracing.gg">
-            race@lssdracing.gg
+          <a className="button button--dark" href="mailto:LSSDRacing@gmail.com">
+            LSSDRacing@gmail.com
             <ArrowUpRight size={17} />
           </a>
         </div>

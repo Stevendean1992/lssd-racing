@@ -20,7 +20,8 @@ The content is fictional and internally consistent. No real-world racing series,
 - All team, race, result, sponsor, and driver content lives in `client/src/data/team.ts`.
 - Portable local development uses `ResilientImage` to fall back to the committed hero asset when Manus Managed Storage is unavailable outside the platform.
 - Custom images are delivered through the project’s Managed Storage image paths and referenced directly.
-- The join form validates locally and opens a prefilled email draft; no backend or fake submission state is used.
+- The application form validates locally and opens a prefilled email draft; no backend or fake submission state is used.
+- Applications and public inquiries use LSSDRacing@gmail.com as the single destination.
 - Deployment remains static: `pnpm build:static`, output `dist/public`.
 
 ## Project structure

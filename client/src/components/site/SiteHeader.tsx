@@ -102,7 +102,7 @@ export default function SiteHeader() {
           </Link>
         </nav>
         <div className="mobile-nav__footer">
-          <a href="mailto:race@lssdracing.gg">race@lssdracing.gg</a>
+          <a href="mailto:LSSDRacing@gmail.com">LSSDRacing@gmail.com</a>
           <span>United States / EST</span>
         </div>
       </div>

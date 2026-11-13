@@ -25,6 +25,7 @@
 - [x] `/join` presents open disciplines, selection process, FAQ, and direct contact details.
 - [x] The application form validates required fields and opens a prefilled email draft; it does not claim a server-side submission.
 - [x] Direct email link remains available if no mail client opens.
+- [x] All applications, direct inquiries, partnership inquiries, press inquiries, and site contact links route to LSSDRacing@gmail.com.
 - [x] Recruitment lists only development driver and race engineer openings; the Broadcast Operator seat is removed.
 
 ## Interaction and responsive behavior

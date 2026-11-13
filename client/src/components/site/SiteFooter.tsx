@@ -31,8 +31,8 @@ export default function SiteFooter() {
           <p>
             Race programmes, partnerships and driver enquiries. One inbox, no dispatch centre.
           </p>
-          <a className="text-link text-link--lime" href="mailto:race@lssdracing.gg">
-            race@lssdracing.gg
+          <a className="text-link text-link--lime" href="mailto:LSSDRacing@gmail.com">
+            LSSDRacing@gmail.com
             <ArrowUpRight size={18} />
           </a>
         </div>
@@ -58,8 +58,8 @@ export default function SiteFooter() {
           <div>
             <span className="footer-label">Race with us</span>
             <Link href="/join">Open positions</Link>
-            <a href="mailto:race@lssdracing.gg?subject=LSSD%20partnership%20enquiry">Partnerships</a>
-            <a href="mailto:race@lssdracing.gg?subject=LSSD%20press%20enquiry">Press office</a>
+            <a href="mailto:LSSDRacing@gmail.com?subject=LSSD%20partnership%20enquiry">Partnerships</a>
+            <a href="mailto:LSSDRacing@gmail.com?subject=LSSD%20press%20enquiry">Press office</a>
           </div>
         </div>
       </div>

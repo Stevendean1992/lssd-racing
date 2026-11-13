@@ -653,7 +653,7 @@ export default function Home() {
 
           <div className="partners__footer">
             <p>Interested in putting your name on a car that never lifts early?</p>
-            <a className="text-link" href="mailto:race@lssdracing.gg?subject=LSSD%20partnership%20enquiry">
+            <a className="text-link" href="mailto:LSSDRacing@gmail.com?subject=LSSD%20partnership%20enquiry">
               Start a partnership conversation
               <ArrowUpRight size={18} />
             </a>
@@ -685,7 +685,7 @@ export default function Home() {
                   Apply to race
                   <ArrowRight size={17} />
                 </Link>
-                <a className="text-link text-link--dark" href="mailto:race@lssdracing.gg">
+                <a className="text-link text-link--dark" href="mailto:LSSDRacing@gmail.com">
                   Talk to the team
                   <ArrowUpRight size={18} />
                 </a>
