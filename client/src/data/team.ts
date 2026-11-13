@@ -63,6 +63,8 @@ export const IMAGES = {
   garage: "/manus-storage/async-images/8HRPVSKRIaWIs9z59AsFXF/image-2.webp",
   detail: "/manus-storage/async-images/8HRPVSKRIaWIs9z59AsFXF/image-3.webp",
   rig: "/manus-storage/async-images/8HRPVSKRIaWIs9z59AsFXF/image-4.webp",
+  bmwM4Gt3: "/bmw-m4-gt3-race.jpg",
+  camaroZl1: "/camaro-zl1-stock-car.jpg",
 } as const;
 
 export const TEAM_STATS = [
@@ -215,7 +217,7 @@ export const MACHINES = [
     title: "BMW M4 GT3",
     description:
       "The GT endurance foundation for LSSD: a 590 hp customer race car built to keep its reference when fuel load, tyre life and track state stop agreeing with each other.",
-    image: IMAGES.detail,
+    image: IMAGES.bmwM4Gt3,
     imageAlt: "Close-up of the BMW M4 GT3 race car's carbon rear wing and team livery detail",
     visualIndex: "BMW M4 GT3 / Rear aero",
     visualCaption: "M4 GT3 / Endurance",
@@ -242,7 +244,7 @@ export const MACHINES = [
     title: "NASCAR Chevrolet Camaro ZL1",
     description:
       "LSSD's Stock Car platform: a NASCAR Next Gen Camaro built around mechanical grip, close-quarters racecraft and the discipline to make every restart count.",
-    image: IMAGES.hero,
+    image: IMAGES.camaroZl1,
     imageAlt: "Chevrolet Camaro ZL1 Next Gen stock car charging through a night race",
     visualIndex: "NASCAR Camaro ZL1 / Stock Car",
     visualCaption: "ZL1 / Cup car",

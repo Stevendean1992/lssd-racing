@@ -7,6 +7,7 @@
 - [x] Site visibly presents all three competition disciplines: GT Endurance, Stock Car, and Rally, with descriptions in the homepage program rail and matching recruitment/SEO copy.
 - [x] Hero uses a custom cinematic racing image with clear headline, status, and primary/secondary actions.
 - [x] Team manifesto, BMW M4 GT3 GT Endurance and Chevrolet Camaro ZL1 Stock Car specifications, driver lineup, race calendar, season results, and partner content are complete and internally consistent.
+- [x] Machines section uses vehicle-specific committed photos for the BMW M4 GT3 and NASCAR Chevrolet Camaro ZL1 entries.
 - [x] A live countdown to the next scheduled race updates without layout shift.
 - [x] Team location is shown as United States and visible local race/operations times use EST.
 - [x] Team, driver, and season performance statistics are initialized at zero; no prior wins, titles, starts, podiums, poles, fastest laps, or points are claimed.

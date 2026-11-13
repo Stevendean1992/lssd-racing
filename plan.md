@@ -4,7 +4,7 @@
 
 A public-facing sim racing team website for **LSSD Racing**. The site presents a credible, independent multi-discipline sim-racing program rather than a generic gaming landing page. It includes:
 
-- A cinematic home page with hero, team manifesto, GT Endurance / Stock Car / Rally program rail, the BMW M4 GT3 and Chevrolet Camaro ZL1 machines, driver lineup, race calendar, results, partners, and join CTA.
+- A cinematic home page with hero, team manifesto, GT Endurance / Stock Car / Rally program rail, the BMW M4 GT3 and Chevrolet Camaro ZL1 machines, vehicle-specific photos, driver lineup, race calendar, results, partners, and join CTA.
 - A driver profile route (`/drivers/:slug`) for each of the two active drivers.
 - A recruitment route (`/join`) with open roles, the selection process, an FAQ, and a working email application flow.
 - Responsive navigation, a live-stream feed section, live race countdown, race/results tabs, scroll reveals, and reduced-motion support.
